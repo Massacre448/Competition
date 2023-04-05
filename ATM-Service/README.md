@@ -17,7 +17,7 @@ The algorithm determines the order and structure of players' entry into the spec
 
 1. Clone the repository to your local machine.
 2. Navigate to the project's root directory in the terminal.
-3. Run [build.sh](build.sh) or use the following command to build the project:
+3. Run [build.sh](build.sh) to build the project
 ## Implementation
 
 The project is implemented in Java and consists of the following classes:
