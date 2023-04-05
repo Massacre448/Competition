@@ -1,41 +1,20 @@
-# Online Game Challenge
+# Competition
 
-This project provides an efficient algorithm to calculate the order and structure of players' entry into a special event in an online game.
+This GitHub repository contains the source code for three different tasks, each of which is contained within its own folder. The three tasks are:
 
-## Problem Description
+    Gra online - Online-Game
+    Serwis bankomatów - ATM-Service
+    Transakcje - Transacions
 
-In a popular online game, special events are organized where players can earn the most points. Players are grouped into clans, and the strength of a clan is determined by the sum of its members' points. The order of entry to the special event is based on the sum of the clan members' points. Due to performance issues, players are allowed to enter in groups with a maximum size (m).
+## Online-Game
 
-The algorithm determines the order and structure of players' entry into the special event based on the given number of places in a group (m), the number of players in a clan (l), and the total number of points (p). The algorithm optimizes the grouping of players to allow as many players as possible to enter the event during a single entry.
+The task is to create an algorithm that determines the order in which players should be allowed to enter a special event within an online game. Players are grouped based on their clan membership and the strength of their clan is determined by the sum of their members' points. The algorithm should optimize the order of entry so that the maximum number of players can enter the event in one go.
+## ATM-Service
 
-## Implementation
+The task is to prepare a system that will organize a list of service requests for a group of technicians responsible for maintaining ATMs. The requests include both planned and unplanned maintenance work. The list must be organized so that it can be completed in the most efficient manner possible, taking into account the priority of each request and the geographic locations of the ATMs.
+## Transacions
 
-The project is implemented in Java and consists of the following classes:
+The task is to create an algorithm that processes a large number of bank transactions, including both deposits and withdrawals, and returns a list of accounts sorted by their final balances. The algorithm should be able to handle up to 100,000 transactions.
+## How to Run
 
-- `Main`: The main class that reads input data from a JSON file and calls the `CalculateService` to calculate the order.
-- `CalculateService`: The core class that contains the algorithm to calculate the order and structure of players' entry into the event.
-- `Players`: A data structure representing the input data, including the group count and a list of clans.
-- `Group`: A data structure representing a group of clans.
-- `Clan`: A data structure representing a clan with a number of players and points.
-
-## Build and Run
-
-To build and run the project, follow these steps:
-
-1. Install Java 17, Maven 3.6.3, and Gradle 8.0.1.
-2. Clone the repository and navigate to the project root directory.
-3. Run the following command to build the project:
-
-mvn clean install
-
-bash
-
-
-4. Run the following command to execute the project:
-
-java -jar target/onlinegame-1.0-SNAPSHOT.jar
-
-vbnet
-
-
-The algorithm will read the input data from the `example_request.json` file and calculate the order of players' entry into the special event. The results will be displayed in the console.
+Each of the three tasks is contained within its own folder. Please refer to the README.md file within each folder for instructions on how to run the corresponding algorithm.
