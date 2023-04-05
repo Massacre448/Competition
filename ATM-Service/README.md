@@ -1,6 +1,6 @@
-# ATM Service Order
+# ATM-Service
 
-This project is a simple REST API service that calculates the optimal order for servicing ATMs based on their region and the request type.
+This project is a simple eco friendly REST API service that calculates the optimal order for servicing ATMs based on their region and the request type.
 
 ## Prerequisites
 
@@ -12,21 +12,22 @@ This project is a simple REST API service that calculates the optimal order for 
 
 1. Clone the repository to your local machine.
 2. Navigate to the project's root directory in the terminal.
-3. Run the following command to build the project:
+3. Run [build.sh](ATM-Service/build.sh) or use the following command to build the project:
 
+```bash
 mvn clean install
+```
 
-
-4. After the build is successful, run the following command to start the application:
-
+4. After the build is successful, run this file: [run.sh](ATM-Service/run.sh) or use the following command to start the application:
+```bash
 java -jar target/atm-service-0.0.1-SNAPSHOT.jar
-
+```
 
 ## API Endpoints
 
 ### Calculate Order
 
-- **POST** `/atms/calculateOrder`
+- **POST** `http://localhost:8080/atms/calculateOrder`
 - Request Body: A list of tasks with the following structure:
 
 ```json
