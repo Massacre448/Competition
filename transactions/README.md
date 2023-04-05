@@ -1,4 +1,4 @@
-# Competition
+# Transactions
  
 This is a solution to the Transactions Challenge.
 
