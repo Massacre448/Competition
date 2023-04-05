@@ -1,13 +1,23 @@
+# ATM-Service
 # Online Game Challenge
 
+This project is a simple eco friendly REST API service that calculates the optimal order for servicing ATMs based on their region and the request type.
 This project provides an efficient algorithm to calculate the order and structure of players' entry into a special event in an online game.
 
+## Prerequisites
 ## Problem Description
 
+- Java JDK 17
+- Maven 3.6.3
+- Spring Boot 2.5.5
 In a popular online game, special events are organized where players can earn the most points. Players are grouped into clans, and the strength of a clan is determined by the sum of its members' points. The order of entry to the special event is based on the sum of the clan members' points. Due to performance issues, players are allowed to enter in groups with a maximum size (m).
 
+## Building and Running the Project
 The algorithm determines the order and structure of players' entry into the special event based on the given number of places in a group (m), the number of players in a clan (l), and the total number of points (p). The algorithm optimizes the grouping of players to allow as many players as possible to enter the event during a single entry.
 
+1. Clone the repository to your local machine.
+2. Navigate to the project's root directory in the terminal.
+3. Run [build.sh](build.sh) or use the following command to build the project:
 ## Implementation
 
 The project is implemented in Java and consists of the following classes:
@@ -26,16 +36,37 @@ To build and run the project, follow these steps:
 2. Clone the repository and navigate to the project root directory.
 3. Run the following command to build the project:
 
+```bash
 mvn clean install
+```
 
-bash
+4. After the build is successful, run this file: [run.sh](run.sh) or use the following command to start the application:
+```bash
+java -jar target/atm-service-0.0.1-SNAPSHOT.jar
+```
 
+## API Endpoints
 
-4. Run the following command to execute the project:
+### Calculate Order
 
-java -jar target/onlinegame-1.0-SNAPSHOT.jar
+- **POST** `http://localhost:8080/atms/calculateOrder`
+- Request Body: A list of tasks with the following structure:
 
-vbnet
-
-
-The algorithm will read the input data from the `example_request.json` file and calculate the order of players' entry into the special event. The results will be displayed in the console.
+```json
+[
+  {
+    "region": <int>,
+    "requestType": <string>,
+    "atmId": <int>
+  },
+  ...
+]
+Response: A list of ATMs in the optimal order for servicing:
+[
+  {
+    "region": <int>,
+    "atmId": <int>
+  },
+  ...
+]
+```
