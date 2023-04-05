@@ -12,8 +12,8 @@ This is a solution to the Transactions Challenge.
 
 1. Clone the repository and navigate to the project directory:
 ```bash
-git clone https://github.com/Massacre448/transactions.git
-cd ing-transactions
+git clone https://github.com/Massacre448/Competition.git
+cd transactions
 ```
 2. Compile the project using Maven:
 ```bash
