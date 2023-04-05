@@ -24,18 +24,16 @@ To build and run the project, follow these steps:
 
 1. Install Java 17, Maven 3.6.3, and Gradle 8.0.1.
 2. Clone the repository and navigate to the project root directory.
-3. Run the following command to build the project:
-
+3. Run the following file Run [build.sh](build.sh) or use the following command to build the project:
+```bash 
 mvn clean install
+```
 
-bash
 
 
-4. Run the following command to execute the project:
-
+4. Run the following file [run.sh](run.sh) or run the following command to execute the project:
+```bash 
 java -jar target/onlinegame-1.0-SNAPSHOT.jar
-
-vbnet
-
+```
 
 The algorithm will read the input data from the `example_request.json` file and calculate the order of players' entry into the special event. The results will be displayed in the console.
