@@ -21,7 +21,7 @@ jobs:
         languages: java
 
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file transactions/pom.xml
 
     - name: Analyze with CodeQL
       uses: github/codeql-action/analyze@v2
