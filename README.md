@@ -3,8 +3,8 @@
 This GitHub repository contains the source code for three different tasks, each of which is contained within its own folder. The three tasks are:
 
     Gra online - Online-Game
-    Serwis bankomatów = ATM-Service
-    Transakcje = Transacions
+    Serwis bankomatów - ATM-Service
+    Transakcje - Transacions
 
 ## Online-Game
 
