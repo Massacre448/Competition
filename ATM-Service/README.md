@@ -12,13 +12,13 @@ This project is a simple eco friendly REST API service that calculates the optim
 
 1. Clone the repository to your local machine.
 2. Navigate to the project's root directory in the terminal.
-3. Run [build.sh](ATM-Service/build.sh) or use the following command to build the project:
+3. Run [build.sh](build.sh) or use the following command to build the project:
 
 ```bash
 mvn clean install
 ```
 
-4. After the build is successful, run this file: [run.sh](ATM-Service/run.sh) or use the following command to start the application:
+4. After the build is successful, run this file: [run.sh](run.sh) or use the following command to start the application:
 ```bash
 java -jar target/atm-service-0.0.1-SNAPSHOT.jar
 ```
